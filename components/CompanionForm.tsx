@@ -166,8 +166,8 @@ const CompanionForm = () => {
                                         <SelectItem  value="formal" >
                                             Formal
                                         </SelectItem>
-                                        <SelectItem  value="informal" >
-                                            Informal
+                                        <SelectItem  value="casual" >
+                                            Casual
                                         </SelectItem>
                                     </SelectContent>
                                 </Select>

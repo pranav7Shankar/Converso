@@ -3,14 +3,14 @@ import {PricingTable} from "@clerk/nextjs";
 
 const Subscription = () => {
     return (
-        <div>
-            <p className={"text-2xl text-center font-bold mt-5 "}>
-                Subscription Plans to suit your Learning needs
+        <main>
+            <p className={"text-4xl text-center font-bold mt-5 "}>
+                Available Plans
             </p>
-            <div className={"mt-5 flex md:mx-4 sm:mx-9 "}>
+            <div>
             <PricingTable/>
             </div>
-        </div>
+        </main>
     )
 }
 export default Subscription

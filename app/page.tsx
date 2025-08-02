@@ -1,44 +1,31 @@
-import React from 'react'
-
 import CompanionCard from "@/components/CompanionCard";
 import CompanionsList from "@/components/CompanionsList";
 import CTA from "@/components/CTA";
 import {recentSessions} from "@/constants";
+import {getAllCompanions, getRecentSessions} from "@/lib/actions/companion.actions";
+import {getSubjectColor} from "@/lib/utils";
 
-const Page = () => {
+const Page = async () => {
+    const companions = await getAllCompanions({ limit: 3 });
+    const recentSessionsCompanions = await getRecentSessions();
   return (
     <main>
       <h1>Popular Companions</h1>
         <section className={"home-section"}>
-            <CompanionCard
-                id={"123"}
-                name={" Neura the Brainy Explorer"}
-                topic={"Neural network of the brain"}
-                subject ={"science"}
-                duration={45}
-                color={"#ffda6e"}
-            />
-            <CompanionCard
-                id={"456"}
-                name={"Countsy the Number Wizard"}
-                topic={"Derivatives and Integrals"}
-                subject ={"maths"}
-                duration={30}
-                color={"#E5D0FF"}
-            />
-            <CompanionCard
-                id={"789"}
-                name={"Verba the Vocabulary Builder"}
-                topic={"language"}
-                subject ={"english literature"}
-                duration={30}
-                color={"#BDE7FF"}
-            />
+            {companions.map((companion) => (
+                <CompanionCard
+                    key={companion.id}
+                    {...companion}
+                    color={getSubjectColor(companion.subject)}
+                />
+            ))}
+
+
         </section>
         <section className={"home-section"}>
             <CompanionsList
                 title={"Recently Completed Sessions"}
-                companions={recentSessions}
+                companions={recentSessionsCompanions}
                 classNames={"w-2/3 max-lg:w-full"}
             />
             <CTA/>
