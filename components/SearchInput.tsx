@@ -10,7 +10,7 @@ const SearchInput = () => {
     const searchParams = useSearchParams();
     const query = searchParams.get('topic') || '';
 
-    const [searchQuery, setSearchQuery] = useState('');
+    const [searchQuery, setSearchQuery] = useState("");
 
     useEffect(() => {
         const delayDebounceFn = setTimeout(() => {
