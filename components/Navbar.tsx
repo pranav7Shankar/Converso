@@ -11,15 +11,15 @@ const Navbar = () => {
           <Image src={"/images/logo.svg"} alt={"Logo"} width={46} height={44} />
         </div>
       </Link>
-      <div className={"flex tems-center gap-8"}>
+      <div className={"flex items-center gap-8"}> 
         <NavItems />
         <SignedOut>
-          <SignInButton>
+          <SignInButton mode="modal" forceRedirectUrl="/" fallbackRedirectUrl="/">
             <button className={"btn-signin"}>Sign In</button>
           </SignInButton>
         </SignedOut>
         <SignedIn>
-          <UserButton afterSignOutUrl={"/"} />
+          <UserButton afterSignOutUrl="/" />
         </SignedIn>
       </div>
     </nav>
