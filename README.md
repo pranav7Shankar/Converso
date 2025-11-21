@@ -84,7 +84,7 @@ npm run dev
 
 <div align="center">
 
-### Made with ❤️ by **Pranav Shankar**
+### Built with ❤️ by **Pranav Shankar**
 
 <a href="mailto:pranav7shankar@gmail.com">Email</a> &nbsp;•&nbsp;
 <a href="https://www.linkedin.com/in/pranav7shankar">LinkedIn</a> &nbsp;•&nbsp;
