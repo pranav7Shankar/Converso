@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🚀 Converso – SaaS LMS Platform  
+# 🚀 Converso – SaaS Learning Platform  
 ### AI Voice Tutors • Subscriptions • Real-Time Learning
 
 <div>
