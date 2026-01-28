@@ -11,7 +11,7 @@
 
 <br />
 
-A modern Learning Management SaaS platform featuring **AI-powered voice tutors**,  
+A modern Learning SaaS platform featuring **AI-powered voice tutors**,  
 secure authentication, subscription management, and real-time capabilities —  
 built with a clean, scalable architecture.
 
